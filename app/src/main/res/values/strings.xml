@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Kbiemas</string>
+    <string name="tab_home">Beranda</string>
+    <string name="beli_emas">Beli Emas</string>
+    <string name="jual_emas">Jual Emas</string>
+    <string name="ambil_emas">Ambil Emas</string>
+    <string name="tab_transaction">Transaksi</string>
+    <string name="saldo">Saldo Anda:</string>
+    <string name="proses_transaksi">Proses Transaksi</string>
+    <string name="input_dana">Masukkan jumlah dana yang akan anda belikan emas</string>
+    <string name="input_uang">Input uang</string>
+    <string name="pilih_paket">Pilih paket</string>
+    <string name="input_number">185000</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

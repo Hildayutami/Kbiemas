@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context="com.kbiemas.kbiemas.fragments.home.ViewHomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/fragment_home_tv_welcomemessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:text="Selamat datang" />
+
+        <TextView
+            android:id="@+id/fragment_home_tv_name"
+            android:layout_below="@+id/fragment_home_tv_welcomemessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:text="Nur Hildayanti Utami"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:src="@drawable/hilda"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/fragment_home_tv_name"
+            app:civ_border_color="#FF000000"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/fragment_home_tv_saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:text="@string/saldo"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fragment_home_tv_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:text="Emas"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="2.35 gr"
+                android:textSize="30sp"
+                android:layout_below="@id/fragment_home_tv_gold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fragment_home_tv_dana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:paddingTop="8dp"
+                android:text="Dana"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Rp. 875.000"
+                android:textSize="30sp"
+                android:layout_below="@id/fragment_home_tv_dana"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:drawableRight="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button_rounded"
+            android:backgroundTint="@color/colorButton"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:text="@string/beli_emas"
+            android:id="@+id/button" />
+
+        <Button
+            android:drawableRight="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_button_rounded"
+            android:backgroundTint="@color/colorButton"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="false"
+            android:text="@string/jual_emas"/>
+
+        <Button
+            android:drawableRight="@mipmap/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/shape_button_rounded"
+            android:backgroundTint="@color/colorButton"
+            android:text="@string/ambil_emas"/>
+
+    </LinearLayout>
+
+</LinearLayout>
